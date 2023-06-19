@@ -1,0 +1,57 @@
+.profile-container {
+  .profile-header-background {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: var(--ion-color-primary-tint);
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .profile-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 110px;
+    .profile-header-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 1px 5px var(--ion-color-primary-tint);
+    }
+    .profile-header-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      p ion-icon {
+        color: var(--ion-color-primary);
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.history-list {
+  .history-item {
+    ion-avatar {
+      padding: 2px;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 20px;
+    }
+    span {
+      font-size: 1rem;
+      color: var(--ion-color-step-600);
+      // color: var(--ion-color-primary);
+    }
+  }
+}

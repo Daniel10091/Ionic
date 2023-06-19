@@ -1,0 +1,89 @@
+<ion-content [fullscreen]="true">
+  
+  <div id="toolbar" class="ion-padding-horizontal">
+    <div slot="start">
+      <ion-tab-button class="profile-button ion-no-padding ion-no-margin" tab="profile">
+        <ion-img [src]="'https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg'"></ion-img>
+      </ion-tab-button>
+    </div>
+    <div slot="end">
+      <ion-button class="notification-button ion-no-padding ion-no-margin" (click)="null" fill="clear">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+        <span class="notification-icon"></span>
+      </ion-button>
+    </div>
+  </div>
+
+  <div id="main" class="ion-margin-vertical ion-padding-horizontal">
+
+    <div class="banner ion-padding">
+      <b>Get you free fuel delivery with</b>
+      <b>Zero delivery charges</b>
+      <ion-button class="ion-no-padding ion-margin-vertical" (click)="null" fill="clear" shape="round">
+        Get Now
+      </ion-button>
+    </div>
+
+    <ion-grid class="main-grid ion-padding ion-margin-top" fixed>
+
+      <b>Escolha seu tipo de Combustível</b>
+      <ion-row class="ion-margin-top">
+        <ion-col size="6">
+          <ion-card class="ion-no-margin" button (click)="null">
+            <div class="card-icon">
+              <img alt="Fuel" src="https://cdn-icons-png.flaticon.com/128/465/465090.png" />
+            </div>
+            <ion-card-header class="ion-text-center">
+              <ion-card-subtitle>Petrol</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card class="ion-no-margin" button (click)="null">
+            <div class="card-icon">
+              <img alt="Fuel" src="https://cdn-icons-png.flaticon.com/128/465/465090.png" />
+            </div>
+            <ion-card-header class="ion-text-center">
+              <ion-card-subtitle>Diesel</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  
+    </ion-grid>
+
+    <ion-grid class="main-grid ion-padding ion-margin-top" fixed>
+
+      <b>Perto da Bomba</b>
+      <ion-row>
+        <ion-col size="12">
+          <ion-row class="ion-margin-top">
+            <ion-card class="card-2 ion-no-margin" button (click)="null">
+              <img alt="Fuel" src="https://comoinvestir.thecap.com.br/medias/2021/08/vibra-energia-criara-fundo-imobiliario-de-postos-de-combustivel.webp" />
+              <ion-card-header class="card-header-absolute">
+                <ion-card-subtitle class="card-subtitle-icon">
+                  <ion-icon name="location"></ion-icon>
+                  Curitiba
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-row>
+          <ion-row class="ion-margin-top">
+            <ion-card class="card-2 ion-no-margin" button (click)="null">
+              <img alt="Fuel" src="https://uploads.vrum.com.br/2022/11/26d866a7-posto-de-combustivel-741x417.jpg" />
+              <ion-card-header class="card-header-absolute">
+                <ion-card-subtitle class="card-subtitle-icon">
+                  <ion-icon name="location"></ion-icon>
+                  Brasília
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+  
+    </ion-grid>
+
+  </div>
+
+</ion-content>

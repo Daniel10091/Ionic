@@ -1,0 +1,111 @@
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px 10px;
+  background: transparent;
+  border: none;
+  .profile-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    ion-img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+  .notification-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    ion-icon {
+      color: var(--notifications-icon-color);
+    }
+    .notification-icon {
+      position: absolute;
+      top: 4px;
+      right: 8px;
+      width: 10px;
+      height: 10px;
+      background-color: var(--notifications-alert-color);
+      border-radius: 50%;
+      border: 1px solid var(--ion-color-light);
+    }
+  }
+}
+
+#main {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    background-color: #152133;
+    border-radius: 20px;
+    b {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+    }
+    b:nth-child(1) {
+      color: #ffffff;
+    }
+    b:nth-child(2) {
+      color: var(--ion-color-primary);
+    }
+    ion-button {
+      height: 35px;
+      padding-inline: 20px;
+      font-weight: bold;
+      color: var(--ion-color-primary-tint);
+      background-color: var(--ion-color-primary);
+      border-radius: 6px;
+    }
+  }
+}
+
+#main .main-grid {
+  background: var(--ion-color-step-100);
+  border-radius: 20px;
+  b {
+    margin-left: 4px;
+    font-size: 1.2rem;
+  }
+  ion-card {
+    .card-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      background-color: var(--ion-color-primary-tint);
+      img {
+        object-fit: cover;
+      }
+    }
+    ion-card-header {
+      padding-block: 15px 10px;
+      background-color: var(--ion-color-primary);
+      &.card-header-absolute {
+        border: 0;
+      }
+      ion-card-subtitle {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        color: var(--ion-color-primary-tint);
+        &.card-subtitle-icon {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+    &.card-2 {
+      img {
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}

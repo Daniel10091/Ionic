@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">auto-fuel</string>
+    <string name="title_activity_main">auto-fuel</string>
+    <string name="package_name">auto.fuel</string>
+    <string name="custom_url_scheme">auto.fuel</string>
+</resources>

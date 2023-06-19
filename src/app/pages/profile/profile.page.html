@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="profile-header-background">
+        <img src="https://img.freepik.com/fotos-premium/fundos-pretos-e-amarelos-que-sao-para-celulares_889227-20151.jpg" alt="">
+      </div>
+      <div class="profile-header-content">
+        <div class="profile-header-img">
+          <img src="https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg" alt="">
+        </div>
+        <div class="profile-header-info ion-text-center">
+          <h4 class="ion-no-margin">John Doe</h4>
+          <p class="ion-no-margin">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>London, UK</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ion-list class="history-list ion-padding-bottom">
+    <ion-list-header class="ion-margin-vertical">
+      <ion-label>Histórico</ion-label>
+      <ion-button>Mostrar tudo</ion-button>
+    </ion-list-header>
+    <ion-item *ngFor="let item of history" class="history-item" button>
+      <ion-avatar slot="start">
+        <img [src]="'https://cdn-icons-png.flaticon.com/128/727/727606.png'" />
+      </ion-avatar>
+      <div>
+        <ion-label>{{item.local}}</ion-label>
+        <span>R$ {{item.price}}</span>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "auto-fuel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
